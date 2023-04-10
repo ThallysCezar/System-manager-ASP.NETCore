@@ -15,25 +15,31 @@ Para instalar e usar o projeto, basta baixar o projeto e rodar o projeto no VS C
   <img src="Assets/img/img.png" alt="Descrição da imagem">
 </p>
 
-
+A homepage com o slide de imagens da Localiza foi uma forma de chamar a atenção do usuário para a empresa, mostrando as imagens de carros de forma dinâmica. Além disso, a tabela de tecnologias pode ser uma forma de mostrar ao usuário as tecnologias utilizadas no desenvolvimento do projeto, fornecendo informações relevantes.
 
 <p align="center">
-  <span>Imagem da home do projeto</span>
+  <span>Imagem da página de Grupo de Carros</span>
   <img src="Assets/img/img2.png" alt="Descrição da imagem">
 </p>
 
-
+Na página de grupo de carros, a tabela de editar, detalhes e deletar cada grupo de carro oferece ao usuário a possibilidade de gerenciar as informações sobre cada departamento da empresa de forma organizada. Isso pode facilitar a manutenção das informações e permitir uma melhor gestão do negócio.
 
 <p align="center">
-  <span>Imagem da home do projeto</span>
+  <span>Imagem da página de Sellers</span>
   <img src="Assets/img/img3.png" alt="Descrição da imagem">
 </p>
 
+Na página de vendedores, a tabela com as opções de editar, detalhes e deletar cada vendedor oferece uma forma de gerenciar as informações dos funcionários da empresa. Além disso, a possibilidade de criar novos vendedores pode ser útil para a empresa em casos de contratações.
 
 <p align="center">
-  <span>Imagem da home do projeto</span>
+  <span>Imagem da página de Searchs</span>
   <img src="Assets/img/img4.png" alt="Descrição da imagem">
 </p>
+
+A página de pesquisas pode ser uma forma de facilitar a busca por informações específicas dentro do sistema. A pesquisa simples e a pesquisa por grupo podem oferecer opções diferentes de busca para os usuários, ajudando-os a encontrar as informações de que precisam de forma mais rápida e eficiente. A utilização das datas iniciais e finais pode ser útil para filtrar os resultados de acordo com o período desejado.
+
+
+## Falando um pouco mais sobre o projeto:
 
 Aprender cada uma das tecnologias utilizadas no projeto de sistema de vendas da Localiza foi fundamental para compreender como elas funcionam em conjunto, bem como para aprimorar minhas habilidades de desenvolvimento de software.
 
