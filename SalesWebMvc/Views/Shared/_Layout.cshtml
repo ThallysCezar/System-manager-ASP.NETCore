@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SalesWebMvc</title>
+    <title>@ViewData["Title"] - Localiza</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-litera.css" />
@@ -17,7 +17,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-color">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,16 +26,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">SalesWebMvc</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">LocalizaPage</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Departments" asp-action="Index">Departments</a></li>
+                    <li><a asp-area="" asp-controller="Departments" asp-action="Index">Grupo de Carros</a></li>
                     <li><a asp-area="" asp-controller="Sellers" asp-action="Index">Sellers</a></li>
                     <li><a asp-area="" asp-controller="SalesRecords" asp-action="Index">Sales</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2023 - SalesWebMvc</p>
+            <p>&copy; 2023 - LocalizaPage</p>
         </footer>
     </div>
 

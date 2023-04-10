@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "LocalizaPage";
 }
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
@@ -10,37 +10,13 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+            <img src="https://cdn-site.localiza.com/wp-content/uploads/2023/04/MicrosoftTeams-image-1.png" alt="ASP.NET" class="img-responsive" />
         </div>
         <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+            <img src="https://cdn-site.localiza.com/wp-content/uploads/2021/06/banner-compliance-localiza.png" alt="Visual Studio" class="img-responsive" />
         </div>
         <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+            <img src="https://cdn-site.localiza.com/wp-content/uploads/2023/03/DE-PARTIDA-BANNER-SITE-RAC-2-1.gif" alt="Microsoft Azure" class="img-responsive" />
         </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -52,43 +28,61 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+<hr/>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
+<div class="container">
+<h2>Tecnologia que foram usadas</h2>
+<div class="table-responsive">
+<table class="table table-striped table-sm">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Tecnologia</th>
+        <th>Sobre a Tecnologia</th>
+        <th>Qual o intuito de usa-la</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>ASP.NET Core MVC</td>
+        <td>É um framework para criação de aplicações web</td>
+        <td>Fornecer uma estrutura organizada e confiável para a construção do sistema de vendas.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>MySQL</td>
+        <td>É um sistema de gerenciamento de banco de dados relacional de código aberto.</td>
+        <td>Armazenar e gerenciar os dados referentes às vendas de carros.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Entity Framework Core</td>
+        <td>É um framework ORM que permite o mapeamento de objetos para bancos de dados relacionais.</td>
+        <td>Foi utilizado para a criação e gerenciamento do banco de dados, garantindo uma maior segurança e integridade dos dados.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Razor Pages</td>
+        <td>É um modelo de programação web que permite a criação de páginas de maneira mais simples e rápida.</td>
+        <td>Criar as páginas do sistema de vendas de forma mais rápida e fácil.</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Bootstrap</td>
+        <td>É um framework CSS para desenvolvimento de interfaces responsivas.</td>
+        <td>Criação de uma interface responsiva e amigável para o usuário final.</td>
+    </tr>
+    </tbody>
+</table>
 </div>
+</div> <!-- /container -->
+
+
+<!-- Call to action-->
+<section class="page-section bg-dark text-white">
+    <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">Para acessar melhor o conteudo do codigo, basta acessar esse link!</h2>
+        <a class="btn btn-light btn-xl" href="https://github.com/ThallysCezar/System-manager-ASP.NETCore">Link do Github</a>
+    </div>
+</section>

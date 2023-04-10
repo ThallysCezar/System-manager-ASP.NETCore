@@ -12,6 +12,10 @@ body {
     padding-right: 15px;
 }
 
+#nav-color {
+    color: #004521;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -35,3 +39,5 @@ body {
         display: none;
     }
 }
+
+
