@@ -12,7 +12,7 @@ Para instalar e usar o projeto, basta baixar o projeto e rodar o projeto no VS C
 
 <p align="center">
   <span>Imagem da home do projeto</span>
-  <img src="Assets/img/img1.png" alt="Descrição da imagem">
+  <img src="Assets/img/img.png" alt="Descrição da imagem">
 </p>
 
 
