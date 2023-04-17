@@ -1,4 +1,4 @@
-# System-manager-ASP.NETCore
+# Aplicativo de Alugueis de Carros
 O projeto do sistema de vendas é um pequeno CRUD desenvolvido utilizando as tecnologias ASP.NET Core MVC, RazorPages, MySQL e Entity Framework Core. O objetivo do projeto é criar um sistema para gerenciamento de vendas de carros em uma empresa chamada Localiza.
 
 Todas as tecnologias foram aprendidas com o curso online da Udemy ministrado por Nelio Alves. O Entity Framework Core é utilizado para mapear as entidades do banco de dados, o ASP.NET Core MVC e o RazorPages são utilizados para a criação das páginas e o MySQL é o banco de dados utilizado para armazenar as informações.
