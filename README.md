@@ -9,7 +9,7 @@ The project allows the insertion, update, deletion, and visualization of data re
 
 To install and run this ASP.NET Core MVC project with MySQL for the database and Razor Pages for the front-end, follow the instructions below:
 
-$$
+
 1. Make sure you have .NET SDK 6.0 or higher installed on your machine. You can check your SDK version with the **dotnet --version** command in the terminal or command prompt.
 
 2. Make sure you have MySQL Server installed on your machine or on a remote server. If you don't have it, you can download and install the latest version of MySQL Community Server at https://dev.mysql.com/downloads/mysql/.
@@ -27,7 +27,6 @@ $$
 8. Run the **dotnet run** command to start the project's web server.
 
 9. Open a browser and access the http://localhost:5000 URL to view the project's home page.
-$$
 
 That's it! Now you can explore the project and develop new features using current .NET technologies and concepts. 
 
