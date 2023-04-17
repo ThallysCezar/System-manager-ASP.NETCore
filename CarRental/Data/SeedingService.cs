@@ -23,12 +23,12 @@ namespace CarRental.Data
                 return; //DB has been seeded
             }
 
-            Department d1 = new Department(1, "Compacto com Ar");
-            Department d2 = new Department(2, "Compacto");
-            Department d3 = new Department(3, "Economico com Ar");
-            Department d4 = new Department(4, "Economico Sedan com Ar");
-            Department d5 = new Department(5, "Intermediario");
-            Department d6 = new Department(6, "Intermediario Automatico");
+            Department d1 = new Department(1, "Compact with Air conditioning");
+            Department d2 = new Department(2, "Compact");
+            Department d3 = new Department(3, "Economy with Air conditioning");
+            Department d4 = new Department(4, "Economy Sedan with Air conditioning");
+            Department d5 = new Department(5, "Intermediate");
+            Department d6 = new Department(6, "Intermediate Automatic");
 
 
             Seller s1 = new Seller(1, "Bob Brown", "bob@gmail.com", new DateTime(1998, 4, 21), 1000.0, d1);

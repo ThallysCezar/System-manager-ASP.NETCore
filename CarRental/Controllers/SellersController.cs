@@ -27,7 +27,6 @@ namespace CarRental.Controllers
             return View(list);
         }
 
-        // GET: Sellers/Create
         public async Task<IActionResult> Create()
         {
             var departments = await _departmentService.FindAllAsync();
@@ -35,9 +34,6 @@ namespace CarRental.Controllers
             return View(viewModel);
         }
 
-        // POST: Sellers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Email,BirthDate,BaseSalary,DepartmentId")] Seller seller)
