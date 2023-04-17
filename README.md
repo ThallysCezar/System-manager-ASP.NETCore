@@ -1,67 +1,69 @@
-# Aplicativo de Alugueis de Carros
-O projeto do sistema de vendas é um pequeno CRUD desenvolvido utilizando as tecnologias ASP.NET Core MVC, RazorPages, MySQL e Entity Framework Core. O objetivo do projeto é criar um sistema para gerenciamento de vendas de carros em uma empresa chamada Localiza.
+# Car Rental Application
+The rental system project is a small CRUD developed using ASP.NET Core MVC, RazorPages, MySQL, and Entity Framework Core technologies. The objective of the project is to create a system for car rental management in a fictional company, for learning and experience.
 
-Todas as tecnologias foram aprendidas com o curso online da Udemy ministrado por Nelio Alves. O Entity Framework Core é utilizado para mapear as entidades do banco de dados, o ASP.NET Core MVC e o RazorPages são utilizados para a criação das páginas e o MySQL é o banco de dados utilizado para armazenar as informações.
+I learned all the technologies used in this project through an online course on Udemy, taught by Nelio Alves. However, after understanding how the project worked, I decided to completely modify it to make it more personal and in line with my needs. Additionally, I updated all the technologies used to the latest available versions, with the aim of making it even more modern and up-to-date.
 
-O projeto permite a inserção, atualização, exclusão e visualização de dados referentes aos carros disponíveis para venda na empresa Localiza. Além de poder buscar através de datas.
+The project allows the insertion, update, deletion, and visualization of data related to cars available for sale at Localiza. Additionally, it allows searching by dates.
 
-## Instalação
+## Installation
 
-Para instalar e executar este projeto ASP.NET Core MVC com MySQL para banco de dados e RazorPages para front, siga as instruções abaixo:
+To install and run this ASP.NET Core MVC project with MySQL for the database and Razor Pages for the front-end, follow the instructions below:
 
-1. Certifique-se de ter o .NET SDK 6.0 ou superior instalado em sua máquina. Você pode verificar sua versão do SDK com o comando **dotnet --version** no terminal ou prompt de comando.
+$$
+1. Make sure you have .NET SDK 6.0 or higher installed on your machine. You can check your SDK version with the **dotnet --version** command in the terminal or command prompt.
 
-2. Certifique-se de ter o MySQL Server instalado em sua máquina ou em um servidor remoto. Caso não tenha, você pode baixar e instalar a versão mais recente do MySQL Community Server em https://dev.mysql.com/downloads/mysql/.
+2. Make sure you have MySQL Server installed on your machine or on a remote server. If you don't have it, you can download and install the latest version of MySQL Community Server at https://dev.mysql.com/downloads/mysql/.
 
-3. Crie um novo banco de dados MySQL para o projeto.
+3. Create a new MySQL database for the project.
 
-4. Clone o repositório do projeto para sua máquina com o comando **git clone https://github.com/ThallysCezar/System-manager-ASP.NETCore**.
+4. Clone the project repository to your machine with the **git clone https://github.com/ThallysCezar/System-manager-ASP.NETCore** command.
 
-5. Navegue até a pasta do projeto clonado com o comando **cd nome-do-projeto**.
+5. Navigate to the cloned project folder with the **cd nome-do-projeto** command.
 
-6. Abra o arquivo **appsettings.json** e configure a string de conexão com o banco de dados MySQL. Substitua os valores de	**Server**, **Database**, **User Id** e **Password** de acordo com as configurações do seu banco de dados.
+6. Open the **appsettings.json** file and configure the MySQL database connection string. Replace the	**Server**, **Database**, **User Id** e **Password** values according to your database settings.
 
-7. Execute o comando **dotnet ef database update** para criar as tabelas e relacionamentos do banco de dados no MySQL.
+7. Run the **dotnet ef database update** command to create the database tables and relationships in MySQL.
 
-8. Execute o comando **dotnet run** para iniciar o servidor web do projeto.
+8. Run the **dotnet run** command to start the project's web server.
 
-9. Abra um navegador e acesse a URL http://localhost:5000 para visualizar a página inicial do projeto.
+9. Open a browser and access the http://localhost:5000 URL to view the project's home page.
+$$
 
-Pronto! Agora você pode explorar o projeto e desenvolver novas funcionalidades utilizando as tecnologias e conceitos atuais de .NET. 
+That's it! Now you can explore the project and develop new features using current .NET technologies and concepts. 
 
-## Imagens do projeto
+## Project Images
 
 <p align="center">
   <span>Imagem da home do projeto</span>
-  <img src="Assets/img/img.png" alt="Imagem do projeto, Home Page">
+  <img src="Assets/img/img.png" alt="Project Image, Home Page">
 </p>
 
-A homepage com o slide de imagens da Localiza foi uma forma de chamar a atenção do usuário para a empresa, mostrando as imagens de carros de forma dinâmica. Além disso, a tabela de tecnologias pode ser uma forma de mostrar ao usuário as tecnologias utilizadas no desenvolvimento do projeto, fornecendo informações relevantes.
+The homepage with the Localiza car image slider was a way to draw the user's attention to the company, showcasing car images dynamically. Additionally, the technologies table could be a way to show users the technologies used in the project development, providing relevant information.
 
 <p align="center">
   <span>Imagem da página de Grupo de Carros</span>
-  <img src="Assets/img/img2.png" alt="Imagem do projeto, Grupo de Carros">
+  <img src="Assets/img/img2.png" alt="Project Image, Vehicle category">
 </p>
 
-Na página de grupo de carros, a tabela de editar, detalhes e deletar cada grupo de carro oferece ao usuário a possibilidade de gerenciar as informações sobre cada departamento da empresa de forma organizada. Isso pode facilitar a manutenção das informações e permitir uma melhor gestão do negócio.
+On the car group page, the table to edit, view details, and delete each car group offers users the possibility of managing information about each department of the company in an organized way. This can make it easier to maintain information and allow for better business management.
 
 <p align="center">
   <span>Imagem da página de Sellers</span>
-  <img src="Assets/img/img3.png" alt="Imagem do projeto, Pagine de Vendedores">
+  <img src="Assets/img/img3.png" alt="Project Image, Sellers Page">
 </p>
 
-Na página de vendedores, a tabela com as opções de editar, detalhes e deletar cada vendedor oferece uma forma de gerenciar as informações dos funcionários da empresa. Além disso, a possibilidade de criar novos vendedores pode ser útil para a empresa em casos de contratações.
+On the sellers page, the table with the options to edit, view details, and delete each seller provides a way to manage employee information. Additionally, the ability to create new sellers can be useful for the company in cases of new hires.
 
 <p align="center">
   <span>Imagem da página de Searchs</span>
-  <img src="Assets/img/img4.png" alt="Imagem do projeto, Pagina de Busca">
+  <img src="Assets/img/img4.png" alt="Project Image, Search Page">
 </p>
 
-A página de pesquisas pode ser uma forma de facilitar a busca por informações específicas dentro do sistema. A pesquisa simples e a pesquisa por grupo podem oferecer opções diferentes de busca para os usuários, ajudando-os a encontrar as informações de que precisam de forma mais rápida e eficiente. A utilização das datas iniciais e finais pode ser útil para filtrar os resultados de acordo com o período desejado.
+The search page can be a way to facilitate searching for specific information within the system. The simple search and the group search can offer different search options for users, helping them find the information they need more quickly and efficiently. The use of start and end dates can be useful for filtering results according to the desired period.
 
-## Tecnologias usadas:
+## Technologies used:
 
-Este projeto utiliza algumas tecnologias e conceitos atuais do desenvolvimento de aplicações web com .NET.
+This project uses some current technologies and concepts for web application development with .NET.
 
 - .NET
 - ASP.NET Core MVC;
@@ -70,14 +72,18 @@ Este projeto utiliza algumas tecnologias e conceitos atuais do desenvolvimento d
 - Razor Pages;
 - Boostrap;
 
-A versão do Entity Framework utilizada é a 7.0.5, que é a última versão disponível no momento. O Entity Framework é uma tecnologia de mapeamento objeto-relacional (ORM) que simplifica o acesso e manipulação de dados de um banco de dados através de objetos C#.
+The goal of the project is to create a system for managing car rentals in a fictitious company for learning and experience purposes.
 
-Outra tecnologia importante utilizada é o Pomelo MySQL, usando a versão 7.0.0, que é um provedor de banco de dados MySQL para o Entity Framework. Ele é um provedor de banco de dados bastante popular na comunidade .NET e é muito utilizado em aplicações web que utilizam MySQL como banco de dados.
+I learned all the technologies used in this project through an online course on Udemy, taught by Nelio Alves. However, after understanding how the project worked, I decided to completely modify it to make it more personal and in line with my needs. In addition, I updated all the technologies used to the latest available versions, in order to make it even more modern and up-to-date.
 
-Além disso, a versão usada para .NET foi a 6.0 que é uma das versões mais recentes do framework .NET, lançada em novembro de 2021. Essa versão do .NET trouxe diversas melhorias e novidades em relação a versões anteriores, como melhorias de desempenho, novos recursos para aplicações web e mais, além de que essa versão trouxe diversas melhorias e novidades em relação à versão anterior, a 3.1, a que foi utilizada no antigo projeto. Em relação aos conceitos utilizados no projeto em questão, a versão .NET 6.0 introduziu melhorias em relação ao uso de interfaces e injeção de dependências, tornando esses conceitos ainda mais importantes para a construção de aplicações robustas e escaláveis. Com as melhorias na performance e escalabilidade do framework, o uso desses conceitos pode ajudar a construir aplicações mais eficientes e fáceis de manter, permitindo que os desenvolvedores foquem em adicionar valor à aplicação ao invés de se preocupar com a infraestrutura.
+The version of Entity Framework used is 7.0.5, which is the latest version available at the moment. Entity Framework is an object-relational mapping (ORM) technology that simplifies access and manipulation of data from a database through C# objects.
 
-Além das tecnologias e conceitos mencionados anteriormente, o projeto utiliza o framework Razor Pages para desenvolvimento do front-end. O Razor Pages é uma abordagem de programação para construção de páginas da web em que o código de servidor é combinado com HTML para produzir uma página final. Ele é muito utilizado em aplicações web ASP.NET Core e permite a criação de páginas da web de forma rápida e fácil.
+Another important technology used is Pomelo MySQL, using version 7.0.0, which is a MySQL database provider for Entity Framework. It is a popular database provider in the .NET community and is widely used in web applications that use MySQL as a database.
 
-Para melhorar o design da aplicação, o Bootstrap 5.1.0 foi utilizado. O Bootstrap é um dos frameworks front-end mais populares do mercado, permitindo a criação de páginas responsivas e com visual moderno de forma simples e prática.
+In addition, the version used for .NET was 6.0, which is one of the latest versions of the .NET framework, released in November 2021. This version of .NET brought various improvements and new features for web applications, such as performance improvements and enhancements to interfaces and dependency injection, making these concepts even more important for building robust and scalable applications. With the improvements in performance and scalability, the use of these concepts can help build more efficient and easier-to-maintain applications, allowing developers to focus on adding value to the application instead of worrying about infrastructure.
 
-Com essas tecnologias e conceitos, o projeto está atualizado e pronto para ser utilizado em aplicações web modernas desenvolvidas com .NET.
+In addition to the aforementioned technologies and concepts, the project uses the Razor Pages framework for front-end development. Razor Pages is a programming approach for building web pages in which server code is combined with HTML to produce a final page. It is widely used in ASP.NET Core web applications and allows for the creation of web pages quickly and easily.
+
+To improve the application's design, Bootstrap 5.1.0 was used. Bootstrap is one of the most popular front-end frameworks on the market, allowing for the creation of responsive and modern-looking pages in a simple and practical way.
+
+With these technologies and concepts, the project is up-to-date and ready to be used in modern web applications developed with .NET.
