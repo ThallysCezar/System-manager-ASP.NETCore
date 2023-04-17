@@ -33,28 +33,28 @@ That's it! Now you can explore the project and develop new features using curren
 ## Project Images
 
 <p align="center">
-  <span>Imagem da home do projeto</span>
+  <span>Image Home Page</span>
   <img src="Assets/img/img.png" alt="Project Image, Home Page">
 </p>
 
 The homepage with the Localiza car image slider was a way to draw the user's attention to the company, showcasing car images dynamically. Additionally, the technologies table could be a way to show users the technologies used in the project development, providing relevant information.
 
 <p align="center">
-  <span>Imagem da página de Grupo de Carros</span>
+  <span>Image Vehicle category</span>
   <img src="Assets/img/img2.png" alt="Project Image, Vehicle category">
 </p>
 
 On the car group page, the table to edit, view details, and delete each car group offers users the possibility of managing information about each department of the company in an organized way. This can make it easier to maintain information and allow for better business management.
 
 <p align="center">
-  <span>Imagem da página de Sellers</span>
+  <span>Image Sellers Page</span>
   <img src="Assets/img/img3.png" alt="Project Image, Sellers Page">
 </p>
 
 On the sellers page, the table with the options to edit, view details, and delete each seller provides a way to manage employee information. Additionally, the ability to create new sellers can be useful for the company in cases of new hires.
 
 <p align="center">
-  <span>Imagem da página de Searchs</span>
+  <span>Image Search Page</span>
   <img src="Assets/img/img4.png" alt="Project Image, Search Page">
 </p>
 
