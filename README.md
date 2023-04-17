@@ -9,25 +9,23 @@ O projeto permite a inserção, atualização, exclusão e visualização de dad
 
 Para instalar e executar este projeto ASP.NET Core MVC com MySQL para banco de dados e RazorPages para front, siga as instruções abaixo:
 
-´
-1. Certifique-se de ter o .NET SDK 6.0 ou superior instalado em sua máquina. Você pode verificar sua versão do SDK com o comando 'dotnet --version' no terminal ou prompt de comando.
+1. Certifique-se de ter o .NET SDK 6.0 ou superior instalado em sua máquina. Você pode verificar sua versão do SDK com o comando **dotnet --version** no terminal ou prompt de comando.
 
 2. Certifique-se de ter o MySQL Server instalado em sua máquina ou em um servidor remoto. Caso não tenha, você pode baixar e instalar a versão mais recente do MySQL Community Server em https://dev.mysql.com/downloads/mysql/.
 
 3. Crie um novo banco de dados MySQL para o projeto.
 
-4. Clone o repositório do projeto para sua máquina com o comando 'git clone https://github.com/ThallysCezar/System-manager-ASP.NETCore'.
+4. Clone o repositório do projeto para sua máquina com o comando **git clone https://github.com/ThallysCezar/System-manager-ASP.NETCore**.
 
-5. Navegue até a pasta do projeto clonado com o comando 'cd nome-do-projeto'.
+5. Navegue até a pasta do projeto clonado com o comando **cd nome-do-projeto**.
 
-6. Abra o arquivo 'appsettings.json' e configure a string de conexão com o banco de dados MySQL. Substitua os valores de 'Server', 'Database', 'User Id' e 'Password' de acordo com as configurações do seu banco de dados.
+6. Abra o arquivo **appsettings.json** e configure a string de conexão com o banco de dados MySQL. Substitua os valores de	**Server**, **Database**, **User Id** e **Password** de acordo com as configurações do seu banco de dados.
 
-7. Execute o comando 'dotnet ef database update' para criar as tabelas e relacionamentos do banco de dados no MySQL.
+7. Execute o comando **dotnet ef database update** para criar as tabelas e relacionamentos do banco de dados no MySQL.
 
-8. Execute o comando 'dotnet run' para iniciar o servidor web do projeto.
+8. Execute o comando **dotnet run** para iniciar o servidor web do projeto.
 
 9. Abra um navegador e acesse a URL http://localhost:5000 para visualizar a página inicial do projeto.
-´
 
 Pronto! Agora você pode explorar o projeto e desenvolver novas funcionalidades utilizando as tecnologias e conceitos atuais de .NET. 
 
@@ -64,6 +62,13 @@ A página de pesquisas pode ser uma forma de facilitar a busca por informações
 ## Tecnologias usadas:
 
 Este projeto utiliza algumas tecnologias e conceitos atuais do desenvolvimento de aplicações web com .NET.
+
+- .NET
+- ASP.NET Core MVC;
+- Entity Framework Core;
+- MySQL;
+- Razor Pages;
+- Boostrap;
 
 A versão do Entity Framework utilizada é a 7.0.5, que é a última versão disponível no momento. O Entity Framework é uma tecnologia de mapeamento objeto-relacional (ORM) que simplifica o acesso e manipulação de dados de um banco de dados através de objetos C#.
 
