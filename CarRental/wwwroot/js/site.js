@@ -3,6 +3,14 @@
 
 // Write your JavaScript code.
 
+$(document).ready(function () {
+    $('#table-departments').DataTable();
+});
+
+$(document).ready(function () {
+    $('#table-seller').DataTable();
+});
+
 $('.close-alert').click(function () {
     $('.alert').hide('hide');
 });
