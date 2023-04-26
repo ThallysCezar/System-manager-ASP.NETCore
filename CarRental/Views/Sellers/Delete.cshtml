@@ -34,13 +34,13 @@
             @Html.DisplayNameFor(model => model.BaseSalary)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.BaseSalary)
+            R$@Html.DisplayFor(model => model.BaseSalary)
         </dd>
     </dl>
 
     <form asp-action="Delete" class="mt-2">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger mt-2" />
-        <a asp-action="Index">Back to List</a>
+        <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary" role="button">Cancel</a>
     </form>
 </div>

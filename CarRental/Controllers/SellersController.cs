@@ -38,17 +38,27 @@ namespace CarRental.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Email,BirthDate,BaseSalary,DepartmentId")] Seller seller)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(seller);
-                await _context.SaveChangesAsync();
+                if (ModelState.IsValid)
+                {
+                    _context.Add(seller);
+                    TempData["SuccessMessage"] = "Seller successfully created!";
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+
+                var departments = await _departmentService.FindAllAsync();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                return View(viewModel);
+            }
+            catch(Exception erro)
+            {
+                TempData["ErroMessage"] = $"Oops! We could not create the Seller, please try again, error detail: {erro.Message}";
                 return RedirectToAction(nameof(Index));
             }
-
-            var departments = await _departmentService.FindAllAsync();
-            var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
-            return View(viewModel);
         }
+            
 
 
         public async Task<IActionResult> Delete(int? id)
@@ -74,10 +84,12 @@ namespace CarRental.Controllers
             try
             {
                 await _sellerService.RemoveAsync(id);
+                TempData["SuccessMessage"] = "Seller successfully deleted!";
                 return RedirectToAction(nameof(Index));
             }
             catch (IntegrityException e)
             {
+                TempData["ErroMessage"] = $"Oops! We could not delete the Seller, please try again, error detail: {e.Message}";
                 return RedirectToAction(nameof(Error), new { message = e.Message });
             }
         }
@@ -124,6 +136,7 @@ namespace CarRental.Controllers
             {
                 var departments = await _departmentService.FindAllAsync();
                 var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                TempData["SuccessMessage"] = "Seller successfully edited!";
                 return View(viewModel);
             }
             if (id != seller.Id)
@@ -133,10 +146,12 @@ namespace CarRental.Controllers
             try
             {
                 await _sellerService.UpdateAsync(seller);
+                TempData["SuccessMessage"] = "Seller successfully edited!";
                 return RedirectToAction(nameof(Index));
             }
             catch (ApplicationException e)
             {
+                TempData["ErroMessage"] = $"Oops! We could not edit the Seller, please try again, error detail: {e.Message}";
                 return RedirectToAction(nameof(Error), new { message = e.Message });
             }
         }

@@ -4,25 +4,24 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>@ViewData["Title"]</h2>
-
-
+<h1>Seller</h1>
+<h1 class="display-3 text-center">@ViewData["Title"]</h1>
 <div class="container mx-auto text-center">
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card">
                 <div class="card-block">
-                    <h4 class="card-title">Name: @Html.DisplayFor(model => model.Name)</h4>
-                    <h6 class="card-subtitle text-muted">Email: @Html.DisplayFor(model => model.Email)</h6>
-                    <p class="card-text p-y-1">Birth Date: @Html.DisplayFor(model => model.BirthDate)</p>   
-                    <p class="card-text p-y-1">Base Salary: @Html.DisplayFor(model => model.BaseSalary)</p>
-                    <p class="card-text p-y-1">Department: @Html.DisplayFor(model => model.Department.Name)</p>
+                    <h3 class="card-title p-y-1">Name: @Html.DisplayFor(model => model.Name)</h3>
+                    <h6 class="card-text p-y-1">Email: @Html.DisplayFor(model => model.Email)</h6>
+                    <h6 class="card-text p-y-1">Birth Date: @Html.DisplayFor(model => model.BirthDate)</h6>   
+                    <h6 class="card-text p-y-1">Base Salary: R$@Html.DisplayFor(model => model.BaseSalary)</h6>
+                    <h6 class="card-text p-y-1">Department: @Html.DisplayFor(model => model.Department.Name)</h6>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary mt-2">Edit</a>
-    <a asp-action="Index">Back to list</a>
+<div class="text-center mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary" role="button">Edit</a>
+    <a asp-action="Index" role="button" class="btn btn-secondary">Back</a>
 </div>
