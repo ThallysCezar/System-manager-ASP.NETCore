@@ -18,7 +18,8 @@ namespace CarRental.Data
         {
             if (_context.Department.Any() ||
                _context.Seller.Any() ||
-               _context.RentalRecord.Any())
+               _context.RentalRecord.Any() ||
+               _context.Users.Any())
             {
                 return; //DB has been seeded
             }

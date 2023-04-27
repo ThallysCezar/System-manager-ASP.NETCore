@@ -17,6 +17,8 @@ builder.Services.AddDbContext<CarRentalContext>(options => options.UseMySql(
 builder.Services.AddScoped<ISellerService, SellerService>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<IRentalRecordService, RentalRecordService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 
 builder.Services.AddControllersWithViews();
 

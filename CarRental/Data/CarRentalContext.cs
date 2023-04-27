@@ -14,5 +14,6 @@ namespace CarRental.Data
         public DbSet<Seller> Seller { get; set; }
         public DbSet<RentalRecord> RentalRecord { get; set; }
         public object Departments { get; internal set; }
+        public DbSet<UserModel> Users { get; set; }
     }
 }
