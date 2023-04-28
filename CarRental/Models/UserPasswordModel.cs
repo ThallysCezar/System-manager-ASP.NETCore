@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CarRental.Models
 {
-    public class UserModel
+    public class UserPasswordModel
     {
         public int Id { get; set; }
 
@@ -20,16 +20,6 @@ namespace CarRental.Models
         public string? Email { get; set; }
 
         [Required(ErrorMessage = "{0} required")]
-        public ProfileEnum Profile { get; set; }
-
-        [Required(ErrorMessage = "{0} required")]
-        public string? Password { get; set; }
-
-        [Required(ErrorMessage = "{0} required")]
-        [Display(Name = "Date Register")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime DataRegister { get; set; }
-        public DateTime? DataUpdate { get; set; }
+        public ProfileEnum? Profile { get; set; }
     }
 }

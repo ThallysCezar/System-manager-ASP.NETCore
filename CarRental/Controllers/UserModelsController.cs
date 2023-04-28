@@ -90,18 +90,34 @@ namespace CarRental.Controllers
             {
                 return RedirectToAction(nameof(Error), new { message = "Id not found" });
             }
-            return View(userModel);
+
+            var userPasswordModel = new UserPasswordModel
+            {
+                Id = userModel.Id,
+                Name = userModel.Name,
+                Email = userModel.Email,
+                Login = userModel.Login,
+                Profile = (Models.Enum.ProfileEnum)userModel.Profile
+            };
+            return View(userPasswordModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Login,Email,Profile,Password,DataRegister,DataUpdate")] UserModel userModel)
+        public async Task<IActionResult> Edit([Bind("Id,Name,Login,Email,Profile,Password")] UserPasswordModel userPasswordModel)
         {
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(userModel);
+                    var userModel = await _context.Users.FindAsync(userPasswordModel.Id);
+                    userModel.Name = userPasswordModel.Name;
+                    userModel.Email = userPasswordModel.Email;
+                    userModel.Login = userPasswordModel.Login;
+                    userModel.Profile = (Models.Enum.ProfileEnum)userPasswordModel.Profile;
+                    _ = _context.Update(userModel);
+                    TempData["SuccessMessage"] = "User successfully edited!";
                     await _context.SaveChangesAsync();
                 }
                 catch (ApplicationException e)
@@ -112,12 +128,8 @@ namespace CarRental.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            if (id != userModel.Id)
-            {
-                return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
-            }
             TempData["SuccessMessage"] = "User successfully edited!";
-            return View(userModel);
+            return View(userPasswordModel);
         }
 
         public async Task<IActionResult> Delete(int? id)

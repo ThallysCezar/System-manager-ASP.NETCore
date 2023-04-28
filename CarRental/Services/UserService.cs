@@ -23,6 +23,7 @@ namespace CarRental.Services
 
         public async Task InsertAsync(UserModel obj)
         {
+            obj.DataRegister = DateTime.Now;
             _context.Add(obj);
             await _context.SaveChangesAsync();
         }
@@ -55,6 +56,7 @@ namespace CarRental.Services
             }
             try
             {
+                obj.DataUpdate = DateTime.Now;
                 _context.Update(obj);
                 await _context.SaveChangesAsync();
             }
