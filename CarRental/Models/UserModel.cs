@@ -31,5 +31,10 @@ namespace CarRental.Models
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataRegister { get; set; }
         public DateTime? DataUpdate { get; set; }
+
+        public bool ValidPassword(string password)
+        {
+            return Password == password;
+        }
     }
 }

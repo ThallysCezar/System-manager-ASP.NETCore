@@ -1,4 +1,6 @@
-﻿@model IEnumerable<CarRental.Models.UserModel>
+﻿@using CarRental.Controllers;
+@using CarRental.Models.Enum;
+@model IEnumerable<CarRental.Models.UserModel>
 
 @{
     ViewData["Title"] = "Users";
@@ -51,7 +53,7 @@
                     @Html.DisplayFor(modelItem => item.Email)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Profile)
+                    @(item.Profile == ProfileEnum.Admin ? "Admin" : "Default" )
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.DataRegister)

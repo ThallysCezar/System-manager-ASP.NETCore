@@ -15,6 +15,10 @@ namespace CarRental.Services
         {
             _context = context;
         }
+        public UserModel SearchByLogin(string login)
+        {
+            return _context.Users.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
+        }
 
         public async Task<List<UserModel>> FindAllAsync()
         {
@@ -46,6 +50,7 @@ namespace CarRental.Services
                 throw new IntegrityException(ex.Message);
             }
         }
+
 
         public async Task UpdateAsync(UserModel obj)
         {
