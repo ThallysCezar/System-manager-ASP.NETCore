@@ -1,5 +1,4 @@
-﻿using CarRental.Data;
-using CarRental.Models;
+﻿using CarRental.Models;
 using CarRental.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,13 +8,25 @@ namespace CarRental.Controllers
     {
         private readonly IUserService _userService;
 
-        public LoginController(IUserService userService)
+        private readonly Helpers.ISession _session;
+
+        public LoginController(IUserService userService, Helpers.ISession session)
         {
             _userService = userService;
+            _session = session;
         }
         public IActionResult Index()
         {
+            if (_session.SearchUserSession() != null) return RedirectToAction("Index", "Home");
+
             return View();
+        }
+
+        public IActionResult LogOff()
+        {
+            _session.UserSessionRemove();
+
+            return RedirectToAction("Index", "Login");
         }
 
         public IActionResult Enter(LoginModel loginModel)
@@ -27,8 +38,10 @@ namespace CarRental.Controllers
                     UserModel user = _userService.SearchByLogin(loginModel.Login);
                     if (user != null)
                     {
-                        if(user.ValidPassword(loginModel.Password))
+                        if (user.ValidPassword(loginModel.Password))
                         {
+                            _session.UserSessionCreation(user);
+                            TempData["user"] = user.Name;
                             return RedirectToAction("Index", "Home");
                         }
                         TempData["ErroMessage"] = $"Invalid password(s), please try again!";
