@@ -42,6 +42,7 @@ namespace CarRental.Controllers
                         {
                             _session.UserSessionCreation(user);
                             TempData["user"] = user.Name;
+                            TempData["profile"] = user.Profile;
                             return RedirectToAction("Index", "Home");
                         }
                         TempData["ErroMessage"] = $"Invalid password(s), please try again!";
