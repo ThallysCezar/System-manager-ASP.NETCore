@@ -1,9 +1,11 @@
-﻿using CarRental.Models.ViewModels;
+﻿using CarRental.Filters;
+using CarRental.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace CarRental.Controllers
 {
+    [PageLogUser]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

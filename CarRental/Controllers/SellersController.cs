@@ -5,9 +5,11 @@ using CarRental.Services.Exceptions;
 using System.Diagnostics;
 using CarRental.Services.Interfaces;
 using CarRental.Data;
+using CarRental.Filters;
 
 namespace CarRental.Controllers
 {
+    [PageLogUser]
     public class SellersController : Controller
     {
         private readonly ISellerService _sellerService;

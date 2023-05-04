@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CarRental.Data;
 using CarRental.Models;
 using CarRental.Services.Interfaces;
 using CarRental.Models.ViewModels;
 using System.Diagnostics;
+using CarRental.Filters;
 
 namespace CarRental.Controllers
 {
+    [PageLogUser]
     public class UserModelsController : Controller
     {
         private readonly CarRentalContext _context;
